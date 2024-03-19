@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Menu
+    - Settings
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -13,9 +14,15 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.Outline
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   serializedClasses:
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
@@ -25,10 +32,16 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.Dropdown/DropdownEvent
+    - UnityEngine.UI.Dropdown/OptionData
+    - UnityEngine.UI.Dropdown/OptionDataList
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
+    - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: Menu
@@ -36,9 +49,27 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Settings
+    methodName: SaveSattings
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Settings
+    methodName: SaveSattings
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Settings
+    methodName: SetResolution
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Settings
+    methodName: SetFullScreen
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -62,21 +93,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1592}
+      Script: {instanceID: 1554}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 1854}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 3060}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 5200}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 5492}
+      Script: {instanceID: 3790}
     - Class: 114
-      Script: {instanceID: 5952}
+      Script: {instanceID: 4840}
     - Class: 114
-      Script: {instanceID: 22518}
+      Script: {instanceID: 5202}
+    - Class: 114
+      Script: {instanceID: 5496}
+    - Class: 114
+      Script: {instanceID: 5970}
+    - Class: 114
+      Script: {instanceID: 5978}
+    - Class: 114
+      Script: {instanceID: 6296}
+    - Class: 114
+      Script: {instanceID: 6726}
+    - Class: 114
+      Script: {instanceID: 7002}
+    - Class: 114
+      Script: {instanceID: 23714}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -148,6 +193,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: aeba82c01bbd5f9f17243d2a985c3ac2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
   - hash:
       serializedVersion: 2
       Hash: 4763159aa2d72ed796c2398564a4d18d
@@ -870,10 +921,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: aeba82c01bbd5f9f17243d2a985c3ac2
+      Hash: ad1cd475517ab4dcd8fd5eea5b834cdc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Menu
+    className: Settings
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
