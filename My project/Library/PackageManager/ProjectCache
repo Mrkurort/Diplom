@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638457825228537679
-    m_Hash: 1020869311
+      ticks: 638465357797900162
+    m_Hash: 787527879
   m_LockFileStatus:
     m_FilePath: D:/GitHub/Diplom/My project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638457825228873626
-    m_Hash: 1743772919
+      ticks: 638465357797900162
+    m_Hash: 3610012335
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
