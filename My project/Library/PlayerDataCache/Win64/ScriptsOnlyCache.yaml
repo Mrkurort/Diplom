@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - LevelChanged
     - Menu
+    - QutionsOneCO
+    - Rotate
     - Settings
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -23,6 +25,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.Mask
     - UnityEngine.UI.Outline
@@ -35,6 +38,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.RectOffset
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -83,65 +87,20 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Settings
     methodName: SetFullScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: Rotate
+    methodName: DefPos
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Rotate
+    methodName: RightR
+  - assembly: Assembly-CSharp
+    fullTypeName: Rotate
+    methodName: LeftR
   sceneClasses:
-    Assets/Scenes/Quations.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1554}
-    - Class: 114
-      Script: {instanceID: 2556}
-    - Class: 114
-      Script: {instanceID: 2758}
-    - Class: 114
-      Script: {instanceID: 5206}
-    - Class: 114
-      Script: {instanceID: 5500}
-    - Class: 114
-      Script: {instanceID: 5974}
-    - Class: 114
-      Script: {instanceID: 5982}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -169,37 +128,110 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1554}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 1818}
+      Script: {instanceID: 1556}
     - Class: 114
-      Script: {instanceID: 1856}
+      Script: {instanceID: 1820}
     - Class: 114
-      Script: {instanceID: 2556}
+      Script: {instanceID: 1858}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2560}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 3048}
     - Class: 114
-      Script: {instanceID: 3794}
+      Script: {instanceID: 3504}
     - Class: 114
-      Script: {instanceID: 4844}
+      Script: {instanceID: 3800}
     - Class: 114
-      Script: {instanceID: 5206}
+      Script: {instanceID: 4850}
     - Class: 114
-      Script: {instanceID: 5500}
+      Script: {instanceID: 5506}
     - Class: 114
-      Script: {instanceID: 5974}
+      Script: {instanceID: 5980}
     - Class: 114
-      Script: {instanceID: 5982}
+      Script: {instanceID: 5988}
     - Class: 114
-      Script: {instanceID: 6300}
+      Script: {instanceID: 6306}
     - Class: 114
-      Script: {instanceID: 6730}
+      Script: {instanceID: 6736}
     - Class: 114
-      Script: {instanceID: 7006}
+      Script: {instanceID: 7012}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Quations.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1514}
+    - Class: 114
+      Script: {instanceID: 1556}
+    - Class: 114
+      Script: {instanceID: 1820}
+    - Class: 114
+      Script: {instanceID: 1932}
+    - Class: 114
+      Script: {instanceID: 2560}
+    - Class: 114
+      Script: {instanceID: 2764}
+    - Class: 114
+      Script: {instanceID: 3048}
+    - Class: 114
+      Script: {instanceID: 4662}
+    - Class: 114
+      Script: {instanceID: 5478}
+    - Class: 114
+      Script: {instanceID: 5506}
+    - Class: 114
+      Script: {instanceID: 5980}
+    - Class: 114
+      Script: {instanceID: 5988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -217,6 +249,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 8e0c8b499f64b686c0ec50f43e94d3af
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: c1058004017c4d95e55a1c77d955e000
@@ -283,6 +321,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
+  - hash:
+      serializedVersion: 2
+      Hash: 268aee46c7dc03b46ed0277a428209e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QutionsOneCO
   - hash:
       serializedVersion: 2
       Hash: 4763159aa2d72ed796c2398564a4d18d
@@ -367,6 +411,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c18838567ab640f2f19b0efc52282778
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: "\u044B\u0432"
   - hash:
       serializedVersion: 2
       Hash: c3632937d58e47b256c6c90c1fb55119
@@ -747,16 +797,16 @@ ScriptsOnlyBuild:
     className: UnityOnDeselectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 8e0c8b499f64b686c0ec50f43e94d3af
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: 8de12aca8b8cb30fa29dfedb5a701e0e
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b1e0c151762437e84a3a9b3d9c1a7a17
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Rotate
   - hash:
       serializedVersion: 2
       Hash: 7bcb35908a60cac26edee0ff51816ada
@@ -1011,6 +1061,6 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Menu.unity
   - Assets/Scenes/Quations.unity
   playerPath: D:/GitHub/Diplom/My project/Start/My project.exe

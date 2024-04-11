@@ -109,11 +109,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1085
+        y: 2580
         width: 1009
         height: 963
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,7 +130,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1039
-        y: 1085
+        y: 2580
         width: 1009
         height: 963
       alignment: 9
@@ -151,7 +151,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1039
-        y: 0
+        y: 1515
         width: 1009
         height: 963
       alignment: 9
@@ -171,8 +171,8 @@ TextureImporter:
       name: UI_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1039
+        y: 527
         width: 1009
         height: 963
       alignment: 9
@@ -184,6 +184,48 @@ TextureImporter:
       bones: []
       spriteID: a4bb70707b24be844b4e97e3c16950b0
       internalID: 642166685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1515
+        width: 1009
+        height: 963
+      alignment: 9
+      pivot: {x: 0.523039, y: 0.5080465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11652a3e8bb22b342a586d8d77d05dad
+      internalID: -49982640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 519
+        width: 1033
+        height: 963
+      alignment: 9
+      pivot: {x: 0.523039, y: 0.5080465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa334e7b3a00eab41945b6ae7a4da4b6
+      internalID: -403917109
       vertices: []
       indices: 
       edges: []
@@ -203,6 +245,8 @@ TextureImporter:
       UI_1: -1546964197
       UI_2: 2015605472
       UI_3: 642166685
+      UI_4: -49982640
+      UI_5: -403917109
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

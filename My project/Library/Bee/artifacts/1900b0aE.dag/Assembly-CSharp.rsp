@@ -346,7 +346,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script C#/LevelChanged.cs"
 "Assets/Script C#/Menu.cs"
+"Assets/Script C#/QutionsOneCO.cs"
+"Assets/Script C#/Rotate.cs"
 "Assets/Script C#/Settings.cs"
+"Assets/Script C#/ыв.cs"
 -langversion:9.0
 
 /deterministic
