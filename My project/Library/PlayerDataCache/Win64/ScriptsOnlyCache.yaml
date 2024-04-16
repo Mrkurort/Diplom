@@ -6,6 +6,11 @@ ScriptsOnlyBuild:
     - QutionsOneCO
     - Rotate
     - Settings
+    - TrigerTest
+    Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.InputSettings
+    - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -88,8 +93,83 @@ ScriptsOnlyBuild:
     fullTypeName: Settings
     methodName: SetFullScreen
   - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Active
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Active
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Active
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Checking
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -97,8 +177,104 @@ ScriptsOnlyBuild:
     fullTypeName: Rotate
     methodName: RightR
   - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Active
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Active
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: LeftR
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Active
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Disable
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   sceneClasses:
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -128,37 +304,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
-    - Class: 114
-      Script: {instanceID: 1556}
-    - Class: 114
-      Script: {instanceID: 1820}
+      Script: {instanceID: 1560}
     - Class: 114
       Script: {instanceID: 1858}
     - Class: 114
-      Script: {instanceID: 2560}
+      Script: {instanceID: 1904}
     - Class: 114
-      Script: {instanceID: 2764}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 3048}
+      Script: {instanceID: 2894}
     - Class: 114
-      Script: {instanceID: 3504}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 3800}
+      Script: {instanceID: 3716}
     - Class: 114
-      Script: {instanceID: 4850}
+      Script: {instanceID: 4050}
     - Class: 114
-      Script: {instanceID: 5506}
+      Script: {instanceID: 5230}
     - Class: 114
-      Script: {instanceID: 5980}
+      Script: {instanceID: 5642}
     - Class: 114
-      Script: {instanceID: 5988}
+      Script: {instanceID: 5964}
     - Class: 114
-      Script: {instanceID: 6306}
+      Script: {instanceID: 6498}
     - Class: 114
-      Script: {instanceID: 6736}
+      Script: {instanceID: 6508}
     - Class: 114
-      Script: {instanceID: 7012}
+      Script: {instanceID: 6872}
+    - Class: 114
+      Script: {instanceID: 7358}
+    - Class: 114
+      Script: {instanceID: 7676}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -194,6 +370,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -209,29 +387,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 1556}
+      Script: {instanceID: 1858}
     - Class: 114
-      Script: {instanceID: 1820}
+      Script: {instanceID: 1982}
     - Class: 114
-      Script: {instanceID: 1932}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2560}
+      Script: {instanceID: 2894}
     - Class: 114
-      Script: {instanceID: 2764}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 3048}
+      Script: {instanceID: 5016}
     - Class: 114
-      Script: {instanceID: 4662}
+      Script: {instanceID: 5642}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 5934}
     - Class: 114
-      Script: {instanceID: 5506}
+      Script: {instanceID: 5964}
     - Class: 114
-      Script: {instanceID: 5980}
+      Script: {instanceID: 6498}
     - Class: 114
-      Script: {instanceID: 5988}
+      Script: {instanceID: 6508}
+    - Class: 114
+      Script: {instanceID: 7996}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -251,12 +431,6 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 8e0c8b499f64b686c0ec50f43e94d3af
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: c1058004017c4d95e55a1c77d955e000
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
@@ -267,6 +441,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 25fcf8376601657d17838a1b724fb8e2
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: PlayerInput
   - hash:
       serializedVersion: 2
       Hash: 719a1390f9eb856966a1aaab72041631
@@ -291,6 +471,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: bdddf1488100f2b05e78d1640001a071
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.HID.Editor
+    className: HIDDescriptorWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 89fdfe9459ae7f55578ea8284fefe4ed
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: VirtualMouseInput
   - hash:
       serializedVersion: 2
       Hash: b6919327bcca55e4e56b20b361fa8ee4
@@ -323,7 +515,7 @@ ScriptsOnlyBuild:
     className: Menu
   - hash:
       serializedVersion: 2
-      Hash: 268aee46c7dc03b46ed0277a428209e2
+      Hash: eaaf60a04f806c9c541e9849929b6ab0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QutionsOneCO
@@ -351,6 +543,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerUpMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: ce7d8e656ace251f308b0d622ae254b1
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: AdvancedDropdownWindow
   - hash:
       serializedVersion: 2
       Hash: baf218a9799098962f3ddb5d79364282
@@ -413,12 +611,6 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: c18838567ab640f2f19b0efc52282778
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: "\u044B\u0432"
-  - hash:
-      serializedVersion: 2
       Hash: c3632937d58e47b256c6c90c1fb55119
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -479,6 +671,12 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: cb9a815224f0f2005346ceaa3ad15318
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.OnScreen
+    className: OnScreenButton
+  - hash:
+      serializedVersion: 2
       Hash: 4a3351e209ecf0eff6ab268e49d7f341
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -519,6 +717,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: c6d7eebeace00b1615341882742e98af
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputActionImporterEditor
   - hash:
       serializedVersion: 2
       Hash: 1d9e07bb8536f382c86a0ef0c58f5e7f
@@ -587,6 +791,12 @@ ScriptsOnlyBuild:
     className: ScriptGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: 2c7335239058ee7106af5c639248d4a2
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: InputActionAsset
+  - hash:
+      serializedVersion: 2
       Hash: 3c3e5980c88a14a86741564a7fd08aaa
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -599,10 +809,34 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 4b9ef41da59c739e39a0e1cd34f1ddd8
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputActionDebuggerWindow
+  - hash:
+      serializedVersion: 2
       Hash: 2bd783b5b85429caff317fd8ece19300
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: f27dbaaa7f025997ec9fca2ef101f9cc
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 6f4c38ee1b06ec5021a35b43d6edd1fd
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputStateWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 5db90ba1538b8e285d9a4cf769c2f07e
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: TrackedDeviceRaycaster
   - hash:
       serializedVersion: 2
       Hash: 1824a9130d49df16abbf95d88546f25c
@@ -671,6 +905,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 9cef675c00efb98bcf527a1d4ff9fed8
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.OnScreen
+    className: OnScreenStick
+  - hash:
+      serializedVersion: 2
       Hash: 7219ebb0b4a64fd19236e423b34046f6
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -681,6 +921,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnCancelMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 59e5743e7ec6da179942737a5217fb2c
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputDeviceDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 9cd0152ee05f44c7a0421afc21da4418
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: InputSystemObject
   - hash:
       serializedVersion: 2
       Hash: 6d1ca98bad1cb30a274f79776b279843
@@ -713,6 +965,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 1bf7a0a2c93bd37dcb73a76d31519170
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: RemoteInputPlayerConnection
+  - hash:
+      serializedVersion: 2
       Hash: 3d860abc344bfbd5a594aa55314fb635
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -729,6 +987,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b3b53420f0d10576e33674d9cccd900c
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: BaseInputOverride
   - hash:
       serializedVersion: 2
       Hash: e688ed407bbfb11c21058187316ed44e
@@ -797,10 +1061,28 @@ ScriptsOnlyBuild:
     className: UnityOnDeselectMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 8e0c8b499f64b686c0ec50f43e94d3af
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 39230f691ce4f712b5eb4e70922e506a
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputActionEditorWindow
+  - hash:
+      serializedVersion: 2
       Hash: 8de12aca8b8cb30fa29dfedb5a701e0e
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: f0089fe7211502a04bee2a61606b37ad
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: PlayerInputManagerEditor
   - hash:
       serializedVersion: 2
       Hash: b1e0c151762437e84a3a9b3d9c1a7a17
@@ -869,10 +1151,40 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 0616b13f6c62e299153c6a68aaaec148
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.EnhancedTouch
+    className: TouchSimulation
+  - hash:
+      serializedVersion: 2
+      Hash: 5718db4fbfa13593401516b78a98b6e2
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: PlayerInputEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 752f100eaca2a00eb5e13b1e2745ba1d
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI.Editor
+    className: InputSystemUIInputModuleEditor
+  - hash:
+      serializedVersion: 2
       Hash: 33351225ad07d388c6f33d76ccfe9ba6
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: de6911de94590817a2c9b1375e4e041e
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.Editor
+    className: InputActionAssetEditor
+  - hash:
+      serializedVersion: 2
+      Hash: b906acd878baea9f22b8e04ea1ee81a1
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: 
+    className: DownloadableSample
   - hash:
       serializedVersion: 2
       Hash: f1ba3939edcf4406dbb90ccb6e292259
@@ -885,6 +1197,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: fd005ae1f5a717637a43c3076bad5085
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: InputActionReference
   - hash:
       serializedVersion: 2
       Hash: 7f5d04a23d7ad272dc7905d8fa0d3ae5
@@ -959,6 +1277,12 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: b08d1d91c083f76044c6b090597bf7e5
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: InputSettings
+  - hash:
+      serializedVersion: 2
       Hash: 644007494bc8f11f96cb3d9910dc3bce
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -989,6 +1313,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: b54f4203bc5cb280d0758c27343b40a8
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: InputSystemUIInputModule
+  - hash:
+      serializedVersion: 2
       Hash: a1926869a1b71ceb204692733af622c6
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1001,6 +1331,18 @@ ScriptsOnlyBuild:
     className: UnityOnParticleCollisionMessageListener
   - hash:
       serializedVersion: 2
+      Hash: c795458f5fdb20c84a5f4224b195692a
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.UI
+    className: MultiplayerEventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 1221243affeb7b51593399d574153062
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem.XR
+    className: TrackedPoseDriver
+  - hash:
+      serializedVersion: 2
       Hash: 9a892a8a59574894e4dfcc95e537835f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1011,6 +1353,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: Variables
+  - hash:
+      serializedVersion: 2
+      Hash: fba3d9f4f654e6e9425ad37f65d15fde
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrigerTest
   - hash:
       serializedVersion: 2
       Hash: 227479bd62346e4ec94436066e4f660a
@@ -1035,6 +1383,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 1e4094f9889dbb405020b5a600d7717f
+    assemblyName: Unity.InputSystem.dll
+    namespaceName: UnityEngine.InputSystem
+    className: PlayerInputManager
   - hash:
       serializedVersion: 2
       Hash: 5c76b6826c5a42f322ba10c4da3fc50b
