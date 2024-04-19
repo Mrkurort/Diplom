@@ -22,6 +22,9 @@ public class QutionsOneCO : MonoBehaviour
     public Text Res5;
     public Text Res6;
 
+    private string M1;
+    private string M2;
+
     private int Button1;
     private int Button2;
     private int Button3;
@@ -100,10 +103,50 @@ public class QutionsOneCO : MonoBehaviour
         }
     }
 
-    public void Checking()
+    public void BtnSelect1()
     {
-        
+        M1 = Res1.text;
     }
 
+    public void BtnSelect2()
+    {
+        M1 = Res2.text; 
+    }
 
+    public void BtnSelect3()
+    {
+        M1 = Res3.text;
+    }
+
+    public void BtnSelect4()
+    {
+        M1 = Res4.text;
+    }
+
+    public void BtnSelect5()
+    {
+        M1 = Res5.text;
+    }
+
+    public void BtnSelect6()
+    {
+        M1 = Res6.text;
+    }
+
+    public void Checking1(GameObject Triger)
+    {
+        print("sd");
+
+        M2 = Triger.name;
+
+        if(M1 == M2)
+        {
+            Triger.SetActive(true);
+        }
+        else
+        {
+            print("No");
+        }
+        
+    }
 }
