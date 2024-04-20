@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - FrameLimit
     - LevelChanged
     - Menu
     - QutionsOneCO
@@ -117,6 +118,9 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest
+    methodName: BtnSelect5
+  - assembly: Assembly-CSharp
     fullTypeName: QutionsOneCO
     methodName: Active
   - assembly: UnityEngine.UI
@@ -140,6 +144,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest
+    methodName: BtnSelect4
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
@@ -149,9 +156,6 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Image
     methodName: set_sprite
-  - assembly: Assembly-CSharp
-    fullTypeName: QutionsOneCO
-    methodName: Checking
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Image
     methodName: set_sprite
@@ -170,6 +174,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest
+    methodName: BtnSelect1
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -201,6 +208,9 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest
+    methodName: BtnSelect6
+  - assembly: Assembly-CSharp
     fullTypeName: QutionsOneCO
     methodName: Active
   - assembly: UnityEngine.UI
@@ -224,6 +234,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest
+    methodName: BtnSelect3
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: LeftR
@@ -251,6 +264,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest
+    methodName: BtnSelect2
   - assembly: Assembly-CSharp
     fullTypeName: QutionsOneCO
     methodName: Disable
@@ -370,6 +386,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 74
@@ -412,6 +430,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6508}
     - Class: 114
       Script: {instanceID: 7996}
+    - Class: 114
+      Script: {instanceID: 33986}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -515,7 +535,7 @@ ScriptsOnlyBuild:
     className: Menu
   - hash:
       serializedVersion: 2
-      Hash: eaaf60a04f806c9c541e9849929b6ab0
+      Hash: 33a448beb198cfe9610d5d3bb8d27013
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QutionsOneCO
@@ -1355,7 +1375,7 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
-      Hash: fba3d9f4f654e6e9425ad37f65d15fde
+      Hash: e6bbb5976770d8a8a3364ba157ac6e50
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TrigerTest
@@ -1413,6 +1433,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 3eb4c5657963621a6977c568cb1612da
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FrameLimit
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

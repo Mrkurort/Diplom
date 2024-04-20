@@ -14,7 +14,7 @@ public class QutionsOneCO : MonoBehaviour
     public GameObject[] obj;
     public GameObject[] trig;
     public GameObject[] Buttons;
-
+    
     public Text Res1;
     public Text Res2;
     public Text Res3;
@@ -22,23 +22,12 @@ public class QutionsOneCO : MonoBehaviour
     public Text Res5;
     public Text Res6;
 
-    private string M1;
-    private string M2;
-
-    private int Button1;
-    private int Button2;
-    private int Button3;
-    private int Button4;
-    private int Button5;
-    private int Button6;
-
-    
     int randCount;
-    List<int> generatedNumbers = new List<int>();
+    public List<int> generatedNumbers = new List<int>();
     
 
-    private void Awake() {
-        
+    private void Awake()
+    {        
         for (int i = 0; i < 6; i++) {
             randCount = Random.Range(0, obj.Length);
 
@@ -55,44 +44,50 @@ public class QutionsOneCO : MonoBehaviour
             {
                 case 0:
                     Res1.text = obj[randCount].name;
-                    Button1 = randCount;
-                    //print(Button1);
                     break;
                 case 1:
                     Res2.text = obj[randCount].name;
-                    Button2 = randCount;
-                    //print(Button2);
                     break;
                 case 2:
                     Res3.text = obj[randCount].name;
-                    Button3 = randCount;
-                    //print(Button3);
                     break;
                 case 3:
                     Res4.text = obj[randCount].name;
-                    Button4 = randCount;
-                    //print(Button4);
                     break;
                 case 4:
                     Res5.text = obj[randCount].name;
-                    Button5 = randCount;
-                    //print(Button5);
                     break;
                 case 5:
                     Res6.text = obj[randCount].name;
-                    Button6 = randCount;
-                    /*print(Button6);*/
                     break;
             }
         }                
     }
 
-    public void Active(){
+    private void Update()
+    {
         for (int i = 0; i < generatedNumbers.Count; i++)
         {
-            trig[generatedNumbers[i]].SetActive(true);
+            if (obj[generatedNumbers[i]].activeSelf)
+            {
+                Buttons[i].SetActive(false);
+            }
         }
-        
+    }
+
+    public void Active()
+    {
+        for (int i = 0; i < generatedNumbers.Count; i++)
+        {
+            if (obj[generatedNumbers[i]].activeSelf)
+            {
+                Buttons[i].SetActive(false);
+            }
+            else
+            {
+                trig[generatedNumbers[i]].SetActive(true);
+            }               
+        }        
     }
 
     public void Disable()
@@ -101,52 +96,5 @@ public class QutionsOneCO : MonoBehaviour
         {
             trig[generatedNumbers[i]].SetActive(false);
         }
-    }
-
-    public void BtnSelect1()
-    {
-        M1 = Res1.text;
-    }
-
-    public void BtnSelect2()
-    {
-        M1 = Res2.text; 
-    }
-
-    public void BtnSelect3()
-    {
-        M1 = Res3.text;
-    }
-
-    public void BtnSelect4()
-    {
-        M1 = Res4.text;
-    }
-
-    public void BtnSelect5()
-    {
-        M1 = Res5.text;
-    }
-
-    public void BtnSelect6()
-    {
-        M1 = Res6.text;
-    }
-
-    public void Checking1(GameObject Triger)
-    {
-        print("sd");
-
-        M2 = Triger.name;
-
-        if(M1 == M2)
-        {
-            Triger.SetActive(true);
-        }
-        else
-        {
-            print("No");
-        }
-        
     }
 }
