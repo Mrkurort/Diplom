@@ -13,7 +13,7 @@ public class LevelChanged : MonoBehaviour
     }
 
     public void FadeToLevel(){
-        anim.SetTrigger("fade");
+        anim.SetTrigger("Fade");
     }
 
     public void OnFadeCompleate(){

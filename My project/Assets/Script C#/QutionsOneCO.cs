@@ -14,6 +14,8 @@ public class QutionsOneCO : MonoBehaviour
     public GameObject[] obj;
     public GameObject[] trig;
     public GameObject[] Buttons;
+    public GameObject LC;
+    public Text TB;
     
     public Text Res1;
     public Text Res2;
@@ -23,12 +25,14 @@ public class QutionsOneCO : MonoBehaviour
     public Text Res6;
 
     int randCount;
+    public static int ball = 0;
     public List<int> generatedNumbers = new List<int>();
-    
 
     private void Awake()
-    {        
-        for (int i = 0; i < 6; i++) {
+    {
+        mark2 = 0;
+        ball = 0;
+        for (int i = 0; i < 8; i++) {
             randCount = Random.Range(0, obj.Length);
 
             while (generatedNumbers.Contains(randCount))
@@ -72,7 +76,16 @@ public class QutionsOneCO : MonoBehaviour
             {
                 Buttons[i].SetActive(false);
             }
+            if (TB.text == "")
+            {
+                trig[generatedNumbers[i]].SetActive(false);
+            }
         }
+        if (ball<=-4)
+        {
+            LC.SetActive(true);
+        }
+        
     }
 
     public void Active()
@@ -87,7 +100,10 @@ public class QutionsOneCO : MonoBehaviour
             {
                 trig[generatedNumbers[i]].SetActive(true);
             }               
-        }        
+        }       
+        
+
+
     }
 
     public void Disable()
@@ -95,6 +111,42 @@ public class QutionsOneCO : MonoBehaviour
         for (int i = 0; i < generatedNumbers.Count; i++)
         {
             trig[generatedNumbers[i]].SetActive(false);
+        }
+    }
+
+
+    public Animator anim;
+    public Text Error;
+    public Text GJ;
+    public Text Mark;
+    int mark2 = 0;
+
+    public void Continie()
+    {        
+        if (Buttons[0].activeSelf == false && Buttons[1].activeSelf == false && Buttons[2].activeSelf == false && Buttons[3].activeSelf == false && Buttons[4].activeSelf == false && Buttons[5].activeSelf == false)
+        {
+            switch (ball)
+            {
+                case 0 or 1 or 2:
+                    mark2 = 2;
+                    break;
+                case 3:
+                    mark2 = 3;
+                    break;
+                case 4 or 5:
+                    mark2 = 4;
+                    break;
+                case 6:
+                    mark2 = 5;
+                    break;
+            }
+
+            Error.text = $"Количество ошибочных ответов: {6-ball}";
+            GJ.text = $"Количество верных ответов: {ball}";
+            Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
+
+            anim.SetTrigger("isTrigger");
+
         }
     }
 }

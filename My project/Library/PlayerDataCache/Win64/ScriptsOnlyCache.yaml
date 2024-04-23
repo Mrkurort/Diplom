@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CancelShow
     - FrameLimit
     - LevelChanged
     - Menu
@@ -17,8 +18,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -147,6 +150,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest
     methodName: BtnSelect4
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
@@ -180,6 +186,12 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Rotate
+    methodName: DefPos
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsOneCO
+    methodName: Continie
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: RightR
@@ -326,31 +338,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1904}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 3716}
+      Script: {instanceID: 3718}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4052}
     - Class: 114
-      Script: {instanceID: 5230}
+      Script: {instanceID: 5232}
     - Class: 114
-      Script: {instanceID: 5642}
+      Script: {instanceID: 5644}
     - Class: 114
-      Script: {instanceID: 5964}
+      Script: {instanceID: 5966}
     - Class: 114
-      Script: {instanceID: 6498}
+      Script: {instanceID: 6502}
     - Class: 114
-      Script: {instanceID: 6508}
+      Script: {instanceID: 6512}
     - Class: 114
-      Script: {instanceID: 6872}
+      Script: {instanceID: 6876}
     - Class: 114
-      Script: {instanceID: 7358}
+      Script: {instanceID: 7362}
     - Class: 114
-      Script: {instanceID: 7676}
+      Script: {instanceID: 7680}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -411,27 +423,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1982}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2158}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 5016}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 5642}
+      Script: {instanceID: 5018}
     - Class: 114
-      Script: {instanceID: 5934}
+      Script: {instanceID: 5644}
     - Class: 114
-      Script: {instanceID: 5964}
+      Script: {instanceID: 5936}
     - Class: 114
-      Script: {instanceID: 6498}
+      Script: {instanceID: 5966}
     - Class: 114
-      Script: {instanceID: 6508}
+      Script: {instanceID: 6440}
     - Class: 114
-      Script: {instanceID: 7996}
+      Script: {instanceID: 6502}
     - Class: 114
-      Script: {instanceID: 33986}
+      Script: {instanceID: 6512}
+    - Class: 114
+      Script: {instanceID: 8000}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -535,10 +549,16 @@ ScriptsOnlyBuild:
     className: Menu
   - hash:
       serializedVersion: 2
-      Hash: 33a448beb198cfe9610d5d3bb8d27013
+      Hash: 624eb6a6043374c0bc485888de5ae350
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QutionsOneCO
+  - hash:
+      serializedVersion: 2
+      Hash: e10c4ad5bbf4ebf948d8d9a7725149b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CancelShow
   - hash:
       serializedVersion: 2
       Hash: 4763159aa2d72ed796c2398564a4d18d
@@ -1141,6 +1161,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 3eb4c5657963621a6977c568cb1612da
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FrameLimit
+  - hash:
+      serializedVersion: 2
       Hash: 9690f760294698c29b1bee7d9b7bd452
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1433,12 +1459,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 3eb4c5657963621a6977c568cb1612da
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FrameLimit
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

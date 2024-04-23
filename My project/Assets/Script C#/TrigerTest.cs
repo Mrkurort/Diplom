@@ -8,8 +8,6 @@ using UnityEngine.XR;
 
 public class TrigerTest : MonoBehaviour
 {
-    
-    QutionsOneCO quet;
     public GameObject Triger;
     public GameObject Triger2;
 
@@ -22,7 +20,6 @@ public class TrigerTest : MonoBehaviour
 
     public Text b;
 
-    
     public void OnMouseEnter()
     {
         GetComponent<Renderer>().material.color = Color.green;
@@ -72,21 +69,29 @@ public class TrigerTest : MonoBehaviour
     {
         try
         {
-            print($"{Triger.name}");
-            print(b.text);
             if (b.text == Triger.name)
             {
                 Triger.SetActive(true);
                 Triger2.SetActive(false);
+                b.text = "";
+                QutionsOneCO.ball += 1;
             }
             else
             {
-                print("No");
+                GetComponent<Renderer>().material.color = Color.red;
+                QutionsOneCO.ball -= 1;
             }
         }
         catch
         {
             print($"Œÿ¡ ¿!!!!");
+        }
+    }
+    public void OnMouseUp()
+    {
+        if(GetComponent<Renderer>().material.color == Color.red)
+        {
+            GetComponent<Renderer>().material.color = Color.white;
         }
     }
 }
