@@ -150,8 +150,8 @@ TextureImporter:
       name: Cancel_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 689
+        x: 34
+        y: 690
         width: 205
         height: 206
       alignment: 9
@@ -209,6 +209,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: SelectQ2_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 172
+        width: 205
+        height: 206
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5955d231152c0a478ee76483257d21b
+      internalID: 1103566595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelectQ2_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 188
+        width: 208
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80105894335223147a7e250474746624
+      internalID: 994001951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -225,6 +267,8 @@ TextureImporter:
       Button_1: 595235705
       Cancel_0: 138702209
       Cancel_1: -936199651
+      SelectQ2_0: 1103566595
+      SelectQ2_1: 994001951
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

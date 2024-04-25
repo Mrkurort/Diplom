@@ -6,9 +6,12 @@ ScriptsOnlyBuild:
     - LevelChanged
     - Menu
     - QutionsOneCO
+    - QutionsTwoCO
     - Rotate
     - Settings
     - TrigerTest
+    - TrigerTest2
+    - UnSelectBtn
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -84,6 +87,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Settings
     methodName: SetResolution
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -303,6 +309,354 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: Rotate
+    methodName: DefPos
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Continie
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Rotate
+    methodName: DefPos
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: Rotate
+    methodName: RightR
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: Rotate
+    methodName: LeftR
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Disable
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButtons2
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: UnSelectBtn
+    methodName: UnSelectButton
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Image
+    methodName: set_sprite
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.Text
+    methodName: set_text
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Active
+  - assembly: Assembly-CSharp
+    fullTypeName: TrigerTest2
+    methodName: BtnSelected
   sceneClasses:
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -334,35 +688,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 1860}
     - Class: 114
-      Script: {instanceID: 1904}
+      Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 2684}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2896}
+      Script: {instanceID: 2900}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3718}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 4052}
+      Script: {instanceID: 4056}
     - Class: 114
-      Script: {instanceID: 5232}
+      Script: {instanceID: 5236}
     - Class: 114
-      Script: {instanceID: 5644}
+      Script: {instanceID: 5648}
     - Class: 114
-      Script: {instanceID: 5966}
+      Script: {instanceID: 5970}
     - Class: 114
-      Script: {instanceID: 6502}
+      Script: {instanceID: 6506}
     - Class: 114
-      Script: {instanceID: 6512}
+      Script: {instanceID: 6516}
     - Class: 114
-      Script: {instanceID: 6876}
+      Script: {instanceID: 6880}
     - Class: 114
-      Script: {instanceID: 7362}
+      Script: {instanceID: 7368}
     - Class: 114
-      Script: {instanceID: 7680}
+      Script: {instanceID: 7686}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -419,33 +773,116 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 1860}
     - Class: 114
-      Script: {instanceID: 1982}
+      Script: {instanceID: 1984}
     - Class: 114
-      Script: {instanceID: 2158}
+      Script: {instanceID: 2160}
     - Class: 114
-      Script: {instanceID: 2684}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2896}
+      Script: {instanceID: 2900}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 5018}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 5644}
+      Script: {instanceID: 5648}
     - Class: 114
-      Script: {instanceID: 5936}
+      Script: {instanceID: 5940}
     - Class: 114
-      Script: {instanceID: 5966}
+      Script: {instanceID: 5970}
     - Class: 114
-      Script: {instanceID: 6440}
+      Script: {instanceID: 6444}
     - Class: 114
-      Script: {instanceID: 6502}
+      Script: {instanceID: 6506}
     - Class: 114
-      Script: {instanceID: 6512}
+      Script: {instanceID: 6516}
     - Class: 114
-      Script: {instanceID: 8000}
+      Script: {instanceID: 8006}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Quations_2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1560}
+    - Class: 114
+      Script: {instanceID: 1746}
+    - Class: 114
+      Script: {instanceID: 1860}
+    - Class: 114
+      Script: {instanceID: 2160}
+    - Class: 114
+      Script: {instanceID: 2588}
+    - Class: 114
+      Script: {instanceID: 2688}
+    - Class: 114
+      Script: {instanceID: 2900}
+    - Class: 114
+      Script: {instanceID: 3214}
+    - Class: 114
+      Script: {instanceID: 5022}
+    - Class: 114
+      Script: {instanceID: 5648}
+    - Class: 114
+      Script: {instanceID: 5940}
+    - Class: 114
+      Script: {instanceID: 5970}
+    - Class: 114
+      Script: {instanceID: 6444}
+    - Class: 114
+      Script: {instanceID: 6506}
+    - Class: 114
+      Script: {instanceID: 6516}
+    - Class: 114
+      Script: {instanceID: 7100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -505,6 +942,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 7182183cb8ce6264435246a8fda8befa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UnSelectBtn
   - hash:
       serializedVersion: 2
       Hash: bdddf1488100f2b05e78d1640001a071
@@ -613,6 +1056,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 616899355ec277578ba40524755c233d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrigerTest2
   - hash:
       serializedVersion: 2
       Hash: ef2a760dc8c0bb333363120518871762
@@ -1275,6 +1724,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: fe51e38c50516b89a0414f5fe052adf5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QutionsTwoCO
+  - hash:
+      serializedVersion: 2
       Hash: 466329aa1430edd5d9cc35262ee17096
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1463,4 +1918,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Quations.unity
+  - Assets/Scenes/Quations_2.unity
   playerPath: D:/GitHub/Diplom/My project/Start/My project.exe

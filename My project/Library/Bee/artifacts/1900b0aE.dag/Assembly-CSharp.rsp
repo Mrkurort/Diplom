@@ -351,10 +351,13 @@
 "Assets/Script C#/FrameLimit.cs"
 "Assets/Script C#/LevelChanged.cs"
 "Assets/Script C#/Menu.cs"
-"Assets/Script C#/QutionsOneCO.cs"
+"Assets/Script C#/Q1/QutionsOneCO.cs"
+"Assets/Script C#/Q1/TrigerTest.cs"
+"Assets/Script C#/Q2/QutionsTwoCO.cs"
+"Assets/Script C#/Q2/TrigerTest2.cs"
 "Assets/Script C#/Rotate.cs"
 "Assets/Script C#/Settings.cs"
-"Assets/Script C#/TrigerTest.cs"
+"Assets/Script C#/UnSelectBtn.cs"
 -langversion:9.0
 
 /deterministic
