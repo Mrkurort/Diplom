@@ -28,6 +28,7 @@ public class QutionsTwoCO : MonoBehaviour
     {
         mark2 = 0;
         ball = 0;
+        er = 0;
 
         for (int i = 0; i < obj.Length; i++) 
         {
@@ -59,7 +60,7 @@ public class QutionsTwoCO : MonoBehaviour
                 trig[generatedNumbers[i]].SetActive(false);
             }
         }
-        if (ball<=-4)
+        if (er>=4)
         {
             LC.SetActive(true);
         }

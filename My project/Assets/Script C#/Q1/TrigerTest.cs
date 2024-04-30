@@ -80,6 +80,7 @@ public class TrigerTest : MonoBehaviour
             {
                 GetComponent<Renderer>().material.color = Color.red;
                 QutionsOneCO.er += 1;
+                QutionsOneCO.ball -= 1;
             }
         }
         catch

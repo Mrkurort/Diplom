@@ -95,6 +95,7 @@ public class TrigerTest2 : MonoBehaviour
             {
                 GetComponent<Renderer>().material.color = Color.red;
                 QutionsTwoCO.er += 1;
+                QutionsTwoCO.ball -= 1;
             }
         }
         catch

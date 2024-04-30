@@ -33,6 +33,8 @@ public class QutionsOneCO : MonoBehaviour
     {
         mark2 = 0;
         ball = 0;
+        er= 0;
+
         for (int i = 0; i < 8; i++) {
             randCount = Random.Range(0, obj.Length);
 
@@ -82,9 +84,10 @@ public class QutionsOneCO : MonoBehaviour
                 trig[generatedNumbers[i]].SetActive(false);
             }
         }
-        if (ball<=-4)
+        if (er>=4)
         {
             LC.SetActive(true);
+            
         }
         
     }
@@ -142,7 +145,7 @@ public class QutionsOneCO : MonoBehaviour
                     break;
             }
 
-            Error.text = $"Количество ошибочных ответов: {6-ball}";
+            Error.text = $"Количество ошибочных ответов: {er}";
             GJ.text = $"Количество верных ответов: {ball}";
             Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
 
