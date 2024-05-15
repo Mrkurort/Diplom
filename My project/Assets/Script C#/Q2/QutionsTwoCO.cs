@@ -74,11 +74,12 @@ public class QutionsTwoCO : MonoBehaviour
             if (obj[generatedNumbers[i]].activeSelf)
             {
                 Buttons[i].SetActive(false);
+                trig[generatedNumbers[i]].SetActive(true);
             }
             else
             {
                 trig[generatedNumbers[i]].SetActive(true);
-            }               
+            }
         }       
         
 

@@ -8,6 +8,8 @@ using UnityEngine.XR;
 
 public class TrigerTest2 : MonoBehaviour
 {
+    QutionsTwoCO qtc = new QutionsTwoCO();
+
     public GameObject Triger;
     public GameObject Triger2;
 
@@ -87,7 +89,8 @@ public class TrigerTest2 : MonoBehaviour
             if (b.text == Triger.name)
             {
                 Triger.SetActive(true);
-                Triger2.SetActive(false);
+                
+                
                 b.text = "";
                 QutionsTwoCO.ball += 1;
             }
@@ -97,10 +100,12 @@ public class TrigerTest2 : MonoBehaviour
                 QutionsTwoCO.er += 1;
                 QutionsTwoCO.ball -= 1;
             }
+
+            
         }
-        catch
+        catch(Exception ex)
         {
-            print($"Œÿ¡ ¿!!!!");
+            print($"Œÿ»¡ ¿!!!!\n{ex}");
         }
     }
     public void OnMouseUp()
@@ -110,4 +115,5 @@ public class TrigerTest2 : MonoBehaviour
             GetComponent<Renderer>().material.color = Color.white;
         }
     }
+
 }
