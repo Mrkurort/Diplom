@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CancelShow
     - FrameLimit
     - LevelChanged
+    - Mail
     - Menu
     - QutionsOneCO
     - QutionsTwoCO
@@ -21,16 +22,16 @@ ScriptsOnlyBuild:
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -45,8 +46,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.Outline
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
@@ -62,10 +65,16 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
@@ -460,9 +469,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest2
     methodName: BtnSelected
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: ToMailForm
+  - assembly: Assembly-CSharp
+    fullTypeName: Mail
+    methodName: ToMailForm
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Text
     methodName: set_text
@@ -508,6 +520,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest2
     methodName: BtnSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: Mail
+    methodName: MailTo
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -535,6 +553,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: QutionsTwoCO
     methodName: Continie
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: ToMailForm
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -812,19 +833,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5440}
     - Class: 114
-      Script: {instanceID: 5716}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 6040}
+      Script: {instanceID: 6042}
     - Class: 114
-      Script: {instanceID: 6580}
+      Script: {instanceID: 6582}
     - Class: 114
-      Script: {instanceID: 6590}
+      Script: {instanceID: 6592}
     - Class: 114
-      Script: {instanceID: 6956}
+      Script: {instanceID: 6958}
     - Class: 114
-      Script: {instanceID: 7448}
+      Script: {instanceID: 7450}
     - Class: 114
-      Script: {instanceID: 7770}
+      Script: {instanceID: 7772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -901,19 +922,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5082}
     - Class: 114
-      Script: {instanceID: 5716}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 6012}
     - Class: 114
-      Script: {instanceID: 6040}
+      Script: {instanceID: 6042}
     - Class: 114
-      Script: {instanceID: 6518}
+      Script: {instanceID: 6520}
     - Class: 114
-      Script: {instanceID: 6580}
+      Script: {instanceID: 6582}
     - Class: 114
-      Script: {instanceID: 6590}
+      Script: {instanceID: 6592}
     - Class: 114
-      Script: {instanceID: 8090}
+      Script: {instanceID: 8092}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -974,6 +995,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1588}
     - Class: 114
+      Script: {instanceID: 1720}
+    - Class: 114
       Script: {instanceID: 1774}
     - Class: 114
       Script: {instanceID: 1892}
@@ -988,21 +1011,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3252}
     - Class: 114
+      Script: {instanceID: 4364}
+    - Class: 114
       Script: {instanceID: 5082}
     - Class: 114
-      Script: {instanceID: 5716}
+      Script: {instanceID: 5234}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 5440}
     - Class: 114
-      Script: {instanceID: 6040}
+      Script: {instanceID: 5648}
     - Class: 114
-      Script: {instanceID: 6518}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 6580}
+      Script: {instanceID: 6012}
     - Class: 114
-      Script: {instanceID: 6590}
+      Script: {instanceID: 6042}
     - Class: 114
-      Script: {instanceID: 7178}
+      Script: {instanceID: 6216}
+    - Class: 114
+      Script: {instanceID: 6520}
+    - Class: 114
+      Script: {instanceID: 6582}
+    - Class: 114
+      Script: {instanceID: 6592}
+    - Class: 114
+      Script: {instanceID: 7180}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1786,6 +1819,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
     className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 745d75b978e2bf43810986fa472f450d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mail
   - hash:
       serializedVersion: 2
       Hash: ce29c624b4e215f90c5fc5df651c5363

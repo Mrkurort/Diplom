@@ -305,6 +305,7 @@
 "Assets/Script C#/CancelShow.cs"
 "Assets/Script C#/FrameLimit.cs"
 "Assets/Script C#/LevelChanged.cs"
+"Assets/Script C#/Mail.cs"
 "Assets/Script C#/Menu.cs"
 "Assets/Script C#/Q1/QutionsOneCO.cs"
 "Assets/Script C#/Q1/TrigerTest.cs"

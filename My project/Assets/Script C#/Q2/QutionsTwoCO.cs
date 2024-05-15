@@ -30,6 +30,8 @@ public class QutionsTwoCO : MonoBehaviour
         ball = 0;
         er = 0;
 
+        Mail.restart2++;
+
         for (int i = 0; i < obj.Length; i++) 
         {
             randCount = Random.Range(0, obj.Length);
@@ -99,7 +101,7 @@ public class QutionsTwoCO : MonoBehaviour
     public Text Error;
     public Text GJ;
     public Text Mark;
-    int mark2 = 0;
+    static public int mark2 = 0;
 
     public void Continie()
     {            
@@ -122,7 +124,10 @@ public class QutionsTwoCO : MonoBehaviour
         Error.text = $"Количество ошибочных ответов: {er}";
         GJ.text = $"Количество верных ответов: {ball}";
         Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
-       
+    }
+
+    public void ToMailForm()
+    {
         anim.SetTrigger("isTrigger");
     }
 }

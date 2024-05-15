@@ -34,6 +34,8 @@ public class QutionsOneCO : MonoBehaviour
         mark2 = 0;
         ball = 0;
         er= 0;
+        Mail.restart1++;
+
 
         for (int i = 0; i < 8; i++) {
             randCount = Random.Range(0, obj.Length);
@@ -123,7 +125,7 @@ public class QutionsOneCO : MonoBehaviour
     public Text Error;
     public Text GJ;
     public Text Mark;
-    int mark2 = 0;
+    static public int mark2 = 0;
 
     public void Continie()
     {        
@@ -150,7 +152,11 @@ public class QutionsOneCO : MonoBehaviour
             Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
 
             anim.SetTrigger("isTrigger");
-
         }
+    }
+
+    public void ToMailForm()
+    {
+        anim.SetTrigger("isTrigger");
     }
 }

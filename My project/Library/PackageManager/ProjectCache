@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638488833363791353
-    m_Hash: 1163412221
+      ticks: 638513734779809171
+    m_Hash: 13957862
   m_LockFileStatus:
     m_FilePath: D:/GitHub/Diplom/My project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638488833364080870
-    m_Hash: 3334997416
+      ticks: 638513734779809171
+    m_Hash: 2835420967
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -609,12 +609,14 @@ m_ResolvedPackages:
     - 1.8.0-pre.2
     - 1.8.0
     - 1.8.1
+    - 1.8.2
     compatible:
     - 1.7.0
     - 1.8.0-pre.1
     - 1.8.0-pre.2
     - 1.8.0
     - 1.8.1
+    - 1.8.2
     verified: 1.7.0
   dependencies:
   - name: com.unity.modules.uielements
@@ -1174,6 +1176,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 3.0.0-exp.1
     - 3.0.0-exp.3
+    - 3.0.0-exp.4
     compatible:
     - 1.0.0
     verified: 1.0.0
