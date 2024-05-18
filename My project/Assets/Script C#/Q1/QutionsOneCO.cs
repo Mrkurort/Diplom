@@ -129,30 +129,29 @@ public class QutionsOneCO : MonoBehaviour
 
     public void Continie()
     {        
-        if (Buttons[0].activeSelf == false && Buttons[1].activeSelf == false && Buttons[2].activeSelf == false && Buttons[3].activeSelf == false && Buttons[4].activeSelf == false && Buttons[5].activeSelf == false)
+        
+        switch (ball)
         {
-            switch (ball)
-            {
-                case 0 or 1 or 2:
-                    mark2 = 2;
-                    break;
-                case 3:
-                    mark2 = 3;
-                    break;
-                case 4 or 5:
-                    mark2 = 4;
-                    break;
-                case 6:
-                    mark2 = 5;
-                    break;
-            }
-
-            Error.text = $"Количество ошибочных ответов: {er}";
-            GJ.text = $"Количество верных ответов: {ball}";
-            Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
-
-            anim.SetTrigger("isTrigger");
+            case 0 or 1 or 2:
+                mark2 = 2;
+                break;
+            case 3:
+                mark2 = 3;
+                break;
+            case 4 or 5:
+                mark2 = 4;
+                break;
+            case 6:
+                mark2 = 5;
+                break;
         }
+
+        Error.text = $"Количество ошибочных ответов: {er}";
+        GJ.text = $"Количество верных ответов: {ball}";
+        Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
+
+        anim.SetTrigger("isTrigger");
+        
     }
 
     public void ToMailForm()

@@ -171,10 +171,10 @@ TextureImporter:
       name: PNG_3
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 707
+        x: 1442
+        y: 154
         width: 273
-        height: 992
+        height: 1460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,7 +197,7 @@ TextureImporter:
         width: 673
         height: 527
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,6 +205,48 @@ TextureImporter:
       bones: []
       spriteID: a2f36dc50f1c7d94083025e64d968f4a
       internalID: -1542267914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 827
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c67c321b12b0d4ab334c3ebd664d91
+      internalID: 505653066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q_1
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 208
+        width: 394
+        height: 829
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f617097f5640b1e499e19c6ea663a54e
+      internalID: 871670977
       vertices: []
       indices: 
       edges: []
@@ -225,6 +267,8 @@ TextureImporter:
       PNG_1: -231788620
       PNG_2: 444925185
       PNG_3: 282722150
+      Q_1: 871670977
+      Q_2: 505653066
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

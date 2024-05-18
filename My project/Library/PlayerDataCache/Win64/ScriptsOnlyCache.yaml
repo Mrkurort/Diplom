@@ -26,6 +26,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -292,6 +293,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: QutionsOneCO
     methodName: Continie
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: RightR
@@ -562,6 +566,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Text
     methodName: set_text
@@ -1012,6 +1019,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3252}
     - Class: 114
       Script: {instanceID: 4364}
+    - Class: 114
+      Script: {instanceID: 4554}
     - Class: 114
       Script: {instanceID: 5082}
     - Class: 114

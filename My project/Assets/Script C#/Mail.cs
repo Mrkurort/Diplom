@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using System;
 
 public class Mail : MonoBehaviour
 {
@@ -16,19 +17,21 @@ public class Mail : MonoBehaviour
     public void MailTo()
     {
         MailAddress fromAdres = new MailAddress("interactive_skeleton_app@mail.ru", "Скелет Григорий");//от куда
-        MailAddress toAdres = new MailAddress("vdmitriev04@inbox.ru");//куда
+        MailAddress toAdres = new MailAddress("vdmitriev04@inbox.ru", "");//куда
         
         MailMessage messege = new MailMessage(fromAdres, toAdres);
         messege.Subject = $"Студент {Name.text} ";//Тема
 
         messege.Body = $"Студент: {Name.text}" +
             $"\nГруппа: {group.text}" +
-            $"\n-----Задание №1-----" +
+            $"\n\n\t-----Задание №1-----" +
             $"\nДанный студент справился с заданием №1 на оценку {QutionsOneCO.mark2}!" +
-            $"\nКол-во запусков задания №1: {restart1}" +
-            $"\n-----Задание №2-----" +
+            $"\nКоличество набраных баллов: {QutionsOneCO.ball} из 6" +
+            $"\nКоличество запусков задания №1: {restart1}" +
+            $"\n\n\t-----Задание №2-----" +
             $"\nДанный студент справился с заданием №2 на оценку {QutionsTwoCO.mark2}!" +
-            $"\nКол-во запусков задания №2: {restart2}";//Сообщение
+            $"\nКоличество набраных баллов: {QutionsTwoCO.ball} из 15!" +
+            $"\nКоличество запусков задания №2: {restart2}";//Сообщение
 
         messege.IsBodyHtml = false;
 
