@@ -89,8 +89,8 @@ public class TrigerTest2 : MonoBehaviour
             if (b.text == Triger.name)
             {
                 Triger.SetActive(true);
-                
-                
+                GetComponent<Renderer>().material.color = Color.white;
+
                 b.text = "";
                 QutionsTwoCO.ball += 1;
             }
