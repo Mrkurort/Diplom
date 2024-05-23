@@ -16,7 +16,9 @@ public class QutionsTwoCO : MonoBehaviour
     public GameObject[] Buttons;
     public GameObject LC;
     public Text TB;
-    
+
+    public Animator Dis;
+
     public Text[] Res;
     
     int randCount;
@@ -26,9 +28,10 @@ public class QutionsTwoCO : MonoBehaviour
 
     private void Awake()
     {
-        mark2 = 0;
+        mark2 = 2;
         ball = 0;
         er = 0;
+
 
         Mail.restart2++;
 
@@ -62,11 +65,15 @@ public class QutionsTwoCO : MonoBehaviour
                 trig[generatedNumbers[i]].SetActive(false);
             }
         }
-        if (er>=4)
+        if (er>=6)
         {
             LC.SetActive(true);
         }
        }
+    private void Start()
+    {
+        Dis.SetTrigger("isTrigger");
+    }
 
     public void Active()
      
@@ -126,8 +133,8 @@ public class QutionsTwoCO : MonoBehaviour
         Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
     }
 
-    public void ToMailForm()
+    public void CloseDis()
     {
-        anim.SetTrigger("isTrigger");
+        Dis.SetTrigger("isTrigger");
     }
 }

@@ -16,6 +16,8 @@ public class QutionsOneCO : MonoBehaviour
     public GameObject[] Buttons;
     public GameObject LC;
     public Text TB;
+
+    public Animator Dis;
     
     public Text Res1;
     public Text Res2;
@@ -31,7 +33,8 @@ public class QutionsOneCO : MonoBehaviour
 
     private void Awake()
     {
-        mark2 = 0;
+
+        mark2 = 2;
         ball = 0;
         er= 0;
         Mail.restart1++;
@@ -94,6 +97,11 @@ public class QutionsOneCO : MonoBehaviour
         
     }
 
+    private void Start()
+    {
+        Dis.SetTrigger("isTrigger");
+    }
+
     public void Active()
     {
         for (int i = 0; i < generatedNumbers.Count; i++)
@@ -153,9 +161,8 @@ public class QutionsOneCO : MonoBehaviour
         anim.SetTrigger("isTrigger");
         
     }
-
-    public void ToMailForm()
+    public void CloseDis()
     {
-        anim.SetTrigger("isTrigger");
+        Dis.SetTrigger("isTrigger");
     }
 }

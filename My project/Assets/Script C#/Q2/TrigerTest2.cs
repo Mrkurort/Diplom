@@ -78,6 +78,9 @@ public class TrigerTest2 : MonoBehaviour
                 case 15:
                     b.text = Res[14].text;
                     break;
+                case 16:
+                    b.text = Res[15].text;
+                    break;
             }
         }        
     }
