@@ -16,9 +16,7 @@ public class QutionsTwoCO : MonoBehaviour
     public GameObject[] Buttons;
     public GameObject LC;
     public Text TB;
-
-    public Animator Dis;
-
+    
     public Text[] Res;
     
     int randCount;
@@ -28,7 +26,7 @@ public class QutionsTwoCO : MonoBehaviour
 
     private void Awake()
     {
-        mark2 = 2;
+        mark2 = 0;
         ball = 0;
         er = 0;
 
@@ -66,7 +64,11 @@ public class QutionsTwoCO : MonoBehaviour
                 trig[generatedNumbers[i]].SetActive(false);
             }
         }
+<<<<<<< HEAD
         if (er>= 6 && x == 0)
+=======
+        if (er>=4)
+>>>>>>> parent of f3506e61 (Внесены правки)
         {
             x++;
             Mail mail = new Mail();
@@ -74,10 +76,6 @@ public class QutionsTwoCO : MonoBehaviour
             LC.SetActive(true);
         }
        }
-    private void Start()
-    {
-        Dis.SetTrigger("isTrigger");
-    }
 
     public void Active()
      
@@ -139,8 +137,8 @@ public class QutionsTwoCO : MonoBehaviour
         anim.SetTrigger("isTrigger");
     }
 
-    public void CloseDis()
+    public void ToMailForm()
     {
-        Dis.SetTrigger("isTrigger");
+        anim.SetTrigger("isTrigger");
     }
 }

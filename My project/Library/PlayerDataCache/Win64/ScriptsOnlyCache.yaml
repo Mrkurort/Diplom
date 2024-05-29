@@ -26,6 +26,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -154,9 +155,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Settings
     methodName: SetResolution
-  - assembly: Assembly-CSharp
-    fullTypeName: Menu
-    methodName: disclamerClose
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -298,9 +296,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: QutionsOneCO
     methodName: Continie
-  - assembly: Assembly-CSharp
-    fullTypeName: Mail
-    methodName: MailTo1
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -421,15 +416,6 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: QutionsOneCO
-    methodName: CloseDis
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Text
     methodName: set_text
@@ -493,30 +479,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest2
     methodName: BtnSelected
-  - assembly: UnityEngine.UI
-    fullTypeName: UnityEngine.UI.Text
-    methodName: set_text
-  - assembly: Assembly-CSharp
-    fullTypeName: UnSelectBtn
-    methodName: UnSelectButton
-  - assembly: UnityEngine.UI
-    fullTypeName: UnityEngine.UI.Image
-    methodName: set_sprite
-  - assembly: UnityEngine.UI
-    fullTypeName: UnityEngine.UI.Text
-    methodName: set_text
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: QutionsTwoCO
-    methodName: Active
+    methodName: ToMailForm
   - assembly: Assembly-CSharp
-    fullTypeName: TrigerTest2
-    methodName: BtnSelected
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
+    fullTypeName: Mail
+    methodName: ToMailForm
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Text
     methodName: set_text
@@ -562,6 +530,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest2
     methodName: BtnSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: Mail
+    methodName: MailTo
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -592,15 +566,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: QutionsTwoCO
     methodName: Continie
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: ToMailForm
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
-  - assembly: Assembly-CSharp
-    fullTypeName: Mail
-    methodName: MailTo2
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -694,15 +668,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest2
     methodName: BtnSelected
-  - assembly: Assembly-CSharp
-    fullTypeName: QutionsTwoCO
-    methodName: CloseDis
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Text
     methodName: set_text
@@ -861,8 +826,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 1722}
-    - Class: 114
       Script: {instanceID: 1894}
     - Class: 114
       Script: {instanceID: 1940}
@@ -881,15 +844,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4262}
     - Class: 114
-      Script: {instanceID: 4366}
-    - Class: 114
       Script: {instanceID: 4380}
     - Class: 114
       Script: {instanceID: 4556}
     - Class: 114
       Script: {instanceID: 4660}
-    - Class: 114
-      Script: {instanceID: 5236}
     - Class: 114
       Script: {instanceID: 5302}
     - Class: 114
@@ -898,8 +857,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5720}
     - Class: 114
       Script: {instanceID: 6044}
-    - Class: 114
-      Script: {instanceID: 6218}
     - Class: 114
       Script: {instanceID: 6584}
     - Class: 114
@@ -986,8 +943,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5084}
     - Class: 114
-      Script: {instanceID: 5650}
-    - Class: 114
       Script: {instanceID: 5720}
     - Class: 114
       Script: {instanceID: 6014}
@@ -1061,6 +1016,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1590}
     - Class: 114
+      Script: {instanceID: 1722}
+    - Class: 114
       Script: {instanceID: 1776}
     - Class: 114
       Script: {instanceID: 1894}
@@ -1075,7 +1032,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3254}
     - Class: 114
+      Script: {instanceID: 4366}
+    - Class: 114
+      Script: {instanceID: 4556}
+    - Class: 114
       Script: {instanceID: 5084}
+    - Class: 114
+      Script: {instanceID: 5236}
+    - Class: 114
+      Script: {instanceID: 5442}
     - Class: 114
       Script: {instanceID: 5650}
     - Class: 114
@@ -1084,6 +1049,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6014}
     - Class: 114
       Script: {instanceID: 6044}
+    - Class: 114
+      Script: {instanceID: 6218}
     - Class: 114
       Script: {instanceID: 6522}
     - Class: 114
@@ -1217,13 +1184,13 @@ ScriptsOnlyBuild:
     className: LevelChanged
   - hash:
       serializedVersion: 2
-      Hash: d55131ecf34d4c073c3323b28b514820
+      Hash: 1e5426d104568efb80b1f453be68470a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
   - hash:
       serializedVersion: 2
-      Hash: 1d496e70f56562b65061ecf2c4aaaf6b
+      Hash: 624eb6a6043374c0bc485888de5ae350
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QutionsOneCO
@@ -1877,7 +1844,7 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: ae06f8abfda225cc62f8715d1bd11a39
+      Hash: 745d75b978e2bf43810986fa472f450d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mail
@@ -2099,7 +2066,7 @@ ScriptsOnlyBuild:
     className: VertexJitter
   - hash:
       serializedVersion: 2
-      Hash: 9f763b22f074efee6ea669d57da5d50e
+      Hash: fe51e38c50516b89a0414f5fe052adf5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QutionsTwoCO

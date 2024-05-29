@@ -16,8 +16,6 @@ public class QutionsOneCO : MonoBehaviour
     public GameObject[] Buttons;
     public GameObject LC;
     public Text TB;
-
-    public Animator Dis;
     
     public Text Res1;
     public Text Res2;
@@ -33,8 +31,12 @@ public class QutionsOneCO : MonoBehaviour
 
     private void Awake()
     {
+<<<<<<< HEAD
 
         mark1 = 2;
+=======
+        mark2 = 0;
+>>>>>>> parent of f3506e61 (Внесены правки)
         ball = 0;
         er= 0;
         Mail.restart1++;
@@ -102,11 +104,6 @@ public class QutionsOneCO : MonoBehaviour
         
     }
 
-    private void Start()
-    {
-        Dis.SetTrigger("isTrigger");
-    }
-
     public void Active()
     {
         for (int i = 0; i < generatedNumbers.Count; i++)
@@ -163,8 +160,9 @@ public class QutionsOneCO : MonoBehaviour
         anim.SetTrigger("isTrigger");
         
     }
-    public void CloseDis()
+
+    public void ToMailForm()
     {
-        Dis.SetTrigger("isTrigger");
+        anim.SetTrigger("isTrigger");
     }
 }
