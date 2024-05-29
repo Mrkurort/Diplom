@@ -117,13 +117,13 @@ public class QutionsTwoCO : MonoBehaviour
             case 0 or 1 or 2 or 3 or 4 or 5 or 6:
                 mark2 = 2;
                 break;
-            case 7 or 9:
+            case 7 or 9 or 8 or 10:
                 mark2 = 3;
                 break;
-            case 10 or 13 or 11 or 12:
+            case 13 or 11 or 12 or 14:
                 mark2 = 4;
                 break;
-            case 14 or 15:
+            case 16 or 15:
                 mark2 = 5;
                 break;
         }
@@ -131,6 +131,8 @@ public class QutionsTwoCO : MonoBehaviour
         Error.text = $"Количество ошибочных ответов: {er}";
         GJ.text = $"Количество верных ответов: {ball}";
         Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
+
+        anim.SetTrigger("isTrigger");
     }
 
     public void CloseDis()

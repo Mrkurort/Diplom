@@ -53,7 +53,7 @@ public class Mail : MonoBehaviour
             $"\nГруппа: {Menu.group}" +
             $"\n\n\t-----Задание №2-----" +
             $"\nДанный студент справился с заданием на оценку {QutionsTwoCO.mark2}!" +
-            $"\nКоличество набраных баллов: {QutionsTwoCO.ball} из 15!" +
+            $"\nКоличество набраных баллов: {QutionsTwoCO.ball} из 16!" +
             $"\nПопытка №{restart2}";//Сообщение
 
         messege.IsBodyHtml = false;
