@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Menu : MonoBehaviour
@@ -10,6 +11,8 @@ public class Menu : MonoBehaviour
     public GameObject two;
     public GameObject thre;
     public GameObject four;
+
+    public Animator animator;
 
     public void exit(){
         Application.Quit();
@@ -29,10 +32,22 @@ public class Menu : MonoBehaviour
         else
         {
             x++;
+            animator.SetTrigger("isTrigger");
         }
     }
 
     void Start(){
         
+    }
+
+    public TMP_Text FIO, Group;
+    public static string fio, group;
+
+    public void disclamerClose()
+    {
+        group = Group.text;
+        fio = FIO.text;
+
+        animator.SetTrigger("isTrigger");
     }
 }

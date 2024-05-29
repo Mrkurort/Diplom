@@ -16,7 +16,9 @@ public class QutionsTwoCO : MonoBehaviour
     public GameObject[] Buttons;
     public GameObject LC;
     public Text TB;
-    
+
+    public Animator Dis;
+
     public Text[] Res;
     
     int randCount;
@@ -26,10 +28,14 @@ public class QutionsTwoCO : MonoBehaviour
 
     private void Awake()
     {
-        mark2 = 0;
+        mark2 = 2;
         ball = 0;
         er = 0;
+<<<<<<< HEAD
+=======
 
+
+>>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
         Mail.restart2++;
 
         for (int i = 0; i < obj.Length; i++) 
@@ -49,6 +55,8 @@ public class QutionsTwoCO : MonoBehaviour
         }                
     }
 
+    int x = 0;
+
     private void Update()
     {
         for (int i = 0; i < generatedNumbers.Count; i++)
@@ -62,11 +70,22 @@ public class QutionsTwoCO : MonoBehaviour
                 trig[generatedNumbers[i]].SetActive(false);
             }
         }
-        if (er>=4)
+<<<<<<< HEAD
+        if (er>= 6 && x == 0)
+=======
+        if (er>=6)
+>>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
         {
+            x++;
+            Mail mail = new Mail();
+            mail.MailTo2();
             LC.SetActive(true);
         }
        }
+    private void Start()
+    {
+        Dis.SetTrigger("isTrigger");
+    }
 
     public void Active()
      
@@ -110,13 +129,13 @@ public class QutionsTwoCO : MonoBehaviour
             case 0 or 1 or 2 or 3 or 4 or 5 or 6:
                 mark2 = 2;
                 break;
-            case 7 or 9:
+            case 7 or 9 or 8:
                 mark2 = 3;
                 break;
-            case 10 or 13 or 11 or 12:
+            case 10 or 13 or 11 or 12 or 14:
                 mark2 = 4;
                 break;
-            case 14 or 15:
+            case 15 or 16:
                 mark2 = 5;
                 break;
         }
@@ -124,10 +143,18 @@ public class QutionsTwoCO : MonoBehaviour
         Error.text = $"Количество ошибочных ответов: {er}";
         GJ.text = $"Количество верных ответов: {ball}";
         Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
+
+<<<<<<< HEAD
+        anim.SetTrigger("isTrigger");
+=======
+    public void CloseDis()
+    {
+        Dis.SetTrigger("isTrigger");
+>>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
     }
 
-    public void ToMailForm()
+    public void CloseDis()
     {
-        anim.SetTrigger("isTrigger");
+        Dis.SetTrigger("isTrigger");
     }
 }

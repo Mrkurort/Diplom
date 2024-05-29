@@ -16,6 +16,8 @@ public class QutionsOneCO : MonoBehaviour
     public GameObject[] Buttons;
     public GameObject LC;
     public Text TB;
+
+    public Animator Dis;
     
     public Text Res1;
     public Text Res2;
@@ -31,7 +33,12 @@ public class QutionsOneCO : MonoBehaviour
 
     private void Awake()
     {
-        mark2 = 0;
+
+<<<<<<< HEAD
+        mark1 = 2;
+=======
+        mark2 = 2;
+>>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
         ball = 0;
         er= 0;
         Mail.restart1++;
@@ -73,6 +80,8 @@ public class QutionsOneCO : MonoBehaviour
         }                
     }
 
+    int x = 0;
+
     private void Update()
     {
         for (int i = 0; i < generatedNumbers.Count; i++)
@@ -86,12 +95,20 @@ public class QutionsOneCO : MonoBehaviour
                 trig[generatedNumbers[i]].SetActive(false);
             }
         }
-        if (er>=4)
+        if (er>=4 && x == 0)
         {
+            x++;
+            Mail mail = new Mail();
+            mail.MailTo1();
             LC.SetActive(true);
             
         }
         
+    }
+
+    private void Start()
+    {
+        Dis.SetTrigger("isTrigger");
     }
 
     public void Active()
@@ -107,9 +124,6 @@ public class QutionsOneCO : MonoBehaviour
                 trig[generatedNumbers[i]].SetActive(true);
             }               
         }       
-        
-
-
     }
 
     public void Disable()
@@ -125,7 +139,7 @@ public class QutionsOneCO : MonoBehaviour
     public Text Error;
     public Text GJ;
     public Text Mark;
-    static public int mark2 = 0;
+    static public int mark1 = 0;
 
     public void Continie()
     {        
@@ -133,29 +147,28 @@ public class QutionsOneCO : MonoBehaviour
         switch (ball)
         {
             case 0 or 1 or 2:
-                mark2 = 2;
+                mark1 = 2;
                 break;
             case 3:
-                mark2 = 3;
+                mark1 = 3;
                 break;
             case 4 or 5:
-                mark2 = 4;
+                mark1 = 4;
                 break;
             case 6:
-                mark2 = 5;
+                mark1 = 5;
                 break;
         }
 
         Error.text = $"Количество ошибочных ответов: {er}";
         GJ.text = $"Количество верных ответов: {ball}";
-        Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
+        Mark.text = $"Ваша оценка: {Convert.ToString(mark1)}";
 
         anim.SetTrigger("isTrigger");
         
     }
-
-    public void ToMailForm()
+    public void CloseDis()
     {
-        anim.SetTrigger("isTrigger");
+        Dis.SetTrigger("isTrigger");
     }
 }
