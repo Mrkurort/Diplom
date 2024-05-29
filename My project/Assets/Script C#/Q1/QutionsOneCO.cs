@@ -34,11 +34,7 @@ public class QutionsOneCO : MonoBehaviour
     private void Awake()
     {
 
-<<<<<<< HEAD
         mark1 = 2;
-=======
-        mark2 = 2;
->>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
         ball = 0;
         er= 0;
         Mail.restart1++;

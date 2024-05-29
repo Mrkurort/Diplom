@@ -12,11 +12,7 @@ public class Mail : MonoBehaviour
 {
     public static int restart1;
     public static int restart2;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
     public void MailTo1()
     {
         MailAddress fromAdres = new MailAddress("interactive_skeleton_app@mail.ru", "Скелет Григорий");//от куда
@@ -28,11 +24,9 @@ public class Mail : MonoBehaviour
         messege.Body = $"Студент: {Menu.fio}" +
             $"\nГруппа: {Menu.group}" +
             $"\n\n\t-----Задание №1-----" +
-<<<<<<< HEAD
+
             $"\nДанный студент справился с заданием на оценку {QutionsOneCO.mark1}!" +
-=======
-            $"\nДанный студент справился с заданием на оценку {QutionsOneCO.mark2}!" +
->>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
+
             $"\nКоличество набраных баллов: {QutionsOneCO.ball} из 6" +
             $"\nПопытка №{restart1}";
 
@@ -61,11 +55,9 @@ public class Mail : MonoBehaviour
             $"\nГруппа: {Menu.group}" +
             $"\n\n\t-----Задание №2-----" +
             $"\nДанный студент справился с заданием на оценку {QutionsTwoCO.mark2}!" +
-<<<<<<< HEAD
+
             $"\nКоличество набраных баллов: {QutionsTwoCO.ball} из 16!" +
-=======
-            $"\nКоличество набраных баллов: {QutionsTwoCO.ball} из 15!" +
->>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
+
             $"\nПопытка №{restart2}";//Сообщение
 
         messege.IsBodyHtml = false;

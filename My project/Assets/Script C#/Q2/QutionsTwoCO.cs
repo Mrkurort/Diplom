@@ -31,11 +31,7 @@ public class QutionsTwoCO : MonoBehaviour
         mark2 = 2;
         ball = 0;
         er = 0;
-<<<<<<< HEAD
-=======
 
-
->>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
         Mail.restart2++;
 
         for (int i = 0; i < obj.Length; i++) 
@@ -70,11 +66,7 @@ public class QutionsTwoCO : MonoBehaviour
                 trig[generatedNumbers[i]].SetActive(false);
             }
         }
-<<<<<<< HEAD
         if (er>= 6 && x == 0)
-=======
-        if (er>=6)
->>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
         {
             x++;
             Mail mail = new Mail();
@@ -144,13 +136,7 @@ public class QutionsTwoCO : MonoBehaviour
         GJ.text = $"Количество верных ответов: {ball}";
         Mark.text = $"Ваша оценка: {Convert.ToString(mark2)}";
 
-<<<<<<< HEAD
         anim.SetTrigger("isTrigger");
-=======
-    public void CloseDis()
-    {
-        Dis.SetTrigger("isTrigger");
->>>>>>> f3506e6192c2513326e9f8280bcd11db7476dae4
     }
 
     public void CloseDis()
