@@ -26,6 +26,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -289,6 +290,15 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
@@ -298,9 +308,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Mail
     methodName: MailTo1
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: RightR
@@ -580,21 +587,24 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest2
     methodName: BtnSelected
-  - assembly: Assembly-CSharp
-    fullTypeName: QutionsTwoCO
-    methodName: Continie
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Continie
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
   - assembly: Assembly-CSharp
     fullTypeName: Mail
     methodName: MailTo2
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Text
     methodName: set_text
@@ -847,55 +857,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1590}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 1722}
+      Script: {instanceID: 1724}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 1896}
     - Class: 114
-      Script: {instanceID: 1940}
+      Script: {instanceID: 1942}
     - Class: 114
-      Script: {instanceID: 2240}
+      Script: {instanceID: 2242}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 3766}
+      Script: {instanceID: 3768}
     - Class: 114
-      Script: {instanceID: 4106}
+      Script: {instanceID: 4108}
     - Class: 114
-      Script: {instanceID: 4262}
+      Script: {instanceID: 4264}
     - Class: 114
-      Script: {instanceID: 4366}
+      Script: {instanceID: 4368}
     - Class: 114
-      Script: {instanceID: 4380}
+      Script: {instanceID: 4382}
     - Class: 114
-      Script: {instanceID: 4660}
+      Script: {instanceID: 4558}
     - Class: 114
-      Script: {instanceID: 5236}
+      Script: {instanceID: 4662}
     - Class: 114
-      Script: {instanceID: 5302}
+      Script: {instanceID: 5238}
     - Class: 114
-      Script: {instanceID: 5442}
+      Script: {instanceID: 5304}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5444}
     - Class: 114
-      Script: {instanceID: 6044}
+      Script: {instanceID: 5722}
     - Class: 114
-      Script: {instanceID: 6218}
+      Script: {instanceID: 6046}
     - Class: 114
-      Script: {instanceID: 6584}
+      Script: {instanceID: 6220}
     - Class: 114
-      Script: {instanceID: 6594}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6960}
+      Script: {instanceID: 6596}
     - Class: 114
-      Script: {instanceID: 7452}
+      Script: {instanceID: 6962}
     - Class: 114
-      Script: {instanceID: 7774}
+      Script: {instanceID: 7454}
+    - Class: 114
+      Script: {instanceID: 7776}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -956,37 +968,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1590}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 1896}
     - Class: 114
-      Script: {instanceID: 2018}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2194}
+      Script: {instanceID: 2196}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 5084}
+      Script: {instanceID: 5086}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5722}
     - Class: 114
-      Script: {instanceID: 6014}
+      Script: {instanceID: 6016}
     - Class: 114
-      Script: {instanceID: 6044}
+      Script: {instanceID: 6046}
     - Class: 114
-      Script: {instanceID: 6522}
+      Script: {instanceID: 6524}
     - Class: 114
-      Script: {instanceID: 6584}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6594}
+      Script: {instanceID: 6596}
     - Class: 114
-      Script: {instanceID: 8094}
+      Script: {instanceID: 8096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1045,39 +1057,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1590}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 1776}
+      Script: {instanceID: 1778}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 1896}
     - Class: 114
-      Script: {instanceID: 2194}
+      Script: {instanceID: 2196}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 5084}
+      Script: {instanceID: 5086}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5722}
     - Class: 114
-      Script: {instanceID: 6014}
+      Script: {instanceID: 6016}
     - Class: 114
-      Script: {instanceID: 6044}
+      Script: {instanceID: 6046}
     - Class: 114
-      Script: {instanceID: 6522}
+      Script: {instanceID: 6524}
     - Class: 114
-      Script: {instanceID: 6584}
+      Script: {instanceID: 6586}
     - Class: 114
-      Script: {instanceID: 6594}
+      Script: {instanceID: 6596}
     - Class: 114
-      Script: {instanceID: 7182}
+      Script: {instanceID: 7184}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2328,5 +2340,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Quations.unity
   - Assets/Scenes/Quations_2.unity
-  playerPath: "D:/GitHub/Diplom/My project/Start/\u041E\u0434\u0435\u043D\u044C \u0441\u043A\u0435\u043B\u0435\u0442
-    \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430.exe"
+  playerPath: "D:/GitHub/Diplom/My project/Start/\u041D\u0430\u0440\u0430\u0441\u0442\u0438
+    \u0441\u043A\u0435\u043B\u0435\u0442.exe"
