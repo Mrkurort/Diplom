@@ -289,6 +289,15 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
@@ -298,9 +307,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Mail
     methodName: MailTo1
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: RightR
@@ -580,21 +586,24 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest2
     methodName: BtnSelected
-  - assembly: Assembly-CSharp
-    fullTypeName: QutionsTwoCO
-    methodName: Continie
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Continie
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
   - assembly: Assembly-CSharp
     fullTypeName: Mail
     methodName: MailTo2
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Text
     methodName: set_text
@@ -2328,5 +2337,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Quations.unity
   - Assets/Scenes/Quations_2.unity
-  playerPath: "D:/GitHub/Diplom/My project/Start/\u041E\u0434\u0435\u043D\u044C \u0441\u043A\u0435\u043B\u0435\u0442
-    \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430.exe"
+  playerPath: "D:/GitHub/Diplom/My project/Start/\u041D\u0430\u0440\u0430\u0441\u0442\u0438
+    \u0441\u043A\u0435\u043B\u0435\u0442.exe"
