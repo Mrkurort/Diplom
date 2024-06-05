@@ -16,7 +16,7 @@ public class Mail : MonoBehaviour
     public void MailTo1()
     {
         MailAddress fromAdres = new MailAddress("interactive_skeleton_app@mail.ru", "Скелет Григорий");//от куда
-        MailAddress toAdres = new MailAddress("vdmitriev04@inbox.ru", "");//куда
+        MailAddress toAdres = new MailAddress("golub-nelli@mail.ru", "");//куда
         
         MailMessage messege = new MailMessage(fromAdres, toAdres);
         messege.Subject = $"{Menu.fio} прошёл задания на следуюющие оценки";//Тема
@@ -44,7 +44,7 @@ public class Mail : MonoBehaviour
     public void MailTo2()
     {
         MailAddress fromAdres = new MailAddress("interactive_skeleton_app@mail.ru", "Скелет Григорий");//от куда
-        MailAddress toAdres = new MailAddress("vdmitriev04@inbox.ru", "");//куда
+        MailAddress toAdres = new MailAddress("golub-nelli@mail.ru", "");//куда
 
         MailMessage messege = new MailMessage(fromAdres, toAdres);
         messege.Subject = $"{Menu.fio} прошёл задания на следуюющие оценки";//Тема

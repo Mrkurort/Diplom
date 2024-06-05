@@ -26,12 +26,15 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -289,6 +292,15 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
@@ -298,9 +310,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Mail
     methodName: MailTo1
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: RightR
@@ -580,21 +589,24 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: TrigerTest2
     methodName: BtnSelected
-  - assembly: Assembly-CSharp
-    fullTypeName: QutionsTwoCO
-    methodName: Continie
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: QutionsTwoCO
+    methodName: Continie
   - assembly: Assembly-CSharp
     fullTypeName: Rotate
     methodName: DefPos
   - assembly: Assembly-CSharp
     fullTypeName: Mail
     methodName: MailTo2
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: UnityEngine.UI
     fullTypeName: UnityEngine.UI.Text
     methodName: set_text
@@ -872,6 +884,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4366}
     - Class: 114
       Script: {instanceID: 4380}
+    - Class: 114
+      Script: {instanceID: 4556}
     - Class: 114
       Script: {instanceID: 4660}
     - Class: 114
